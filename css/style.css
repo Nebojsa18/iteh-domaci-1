@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 10;
+    background-color: whitesmokeW;
+    
+}
+
+h1 {
+    margin-top: 2%;
+    
+}
+
+.table{
+    margin: 50;
+    padding: 50;
+}
+
+#iznajmi-button{
+    width:50%;
+    text-align:center;
+}
+
+
+
