@@ -26,4 +26,11 @@ class Rent
         return $conn->query($query);
     }
 
+    public static function getAllRent($conn){
+        $query= "SELECT rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id";
+
+        return $conn->query($query);
+
+    }
+
 }

@@ -14,11 +14,11 @@
 
     <div class="div-home">
 
-        <h1 class="text-center text-primary">Rent a car</h1>
+        <h1 class="text-center text-light">Rent a car</h1>
 
         
         <div class="btnshow">
-        <a href="svaIznajmljivanja.php"><button class="btn btn-primary" id="iznajmljivanja">PRIKAZI IZNAJMLJIVANJA</button></a>
+        <a href="svaIznajmljivanja.php"><button class="btn btn-light" id="iznajmljivanja">PRIKAZI IZNAJMLJIVANJA</button></a>
 
         </div>
 
