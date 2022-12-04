@@ -10,7 +10,7 @@ $data = $conn->query($query);
 
 
 <div class="div-automobili">
-<h3 class="text-left text-secondary">Lista automobila na raspolaganju:</h3>
+<h3 class="text-left text-primary">Lista automobila na raspolaganju:</h3>
             <table class="table table-bordered table-striped border border-2 border-dark" id="table-cars">
                 <thead>
                     <tr>
@@ -37,7 +37,7 @@ $data = $conn->query($query);
                             <td><?php echo $car->model;  ?></td>
                             <td><?php echo $car->godiste;  ?></td>
                             <td><?php echo $car->cena; ?></td>
-                            <td><button class="btn btn-success" id="iznajmi-button">Iznajmi automobil</button></td>
+                            <td><a href="iznajmljivanje-forma.php?car_id=<?php echo $car->car_id ?>"><button class="btn btn-primary" id="iznajmi-button">Iznajmi automobil</button></a></td>
                         </tr>
                     <?php } ?>
                 </tbody>

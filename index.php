@@ -16,6 +16,12 @@
 
         <h1 class="text-center text-primary">Rent a car</h1>
 
+        
+        <div class="btnshow">
+        <a href="svaIznajmljivanja.php"><button class="btn btn-primary" id="iznajmljivanja">PRIKAZI IZNAJMLJIVANJA</button></a>
+
+        </div>
+
         <?php
             include('sviAutomobili.php');
         ?>

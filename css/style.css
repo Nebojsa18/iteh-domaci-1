@@ -20,5 +20,38 @@ h1 {
     text-align:center;
 }
 
+.btnshow button {
+    
+    
+    color: rgb(255, 255, 255); /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-left: 5%;
+  }
+  
+  
+  
+  
+  .btnshow:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.div-automobili{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+.div-iznajmljivanje-forma{
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
 
+.form-group {
+    margin-bottom: 1%;
+}

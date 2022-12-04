@@ -20,4 +20,10 @@ class Rent
 
     }
 
+    public function dodajIznajmljivanje($rent, $conn){
+        $query= "INSERT INTO rent VALUES(NULL, '$rent->ime','$rent->prezime','$rent->jmbg','$rent->car_id', '$rent->broj_dana')";
+
+        return $conn->query($query);
+    }
+
 }
