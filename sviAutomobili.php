@@ -10,7 +10,7 @@ $data = $conn->query($query);
 
 
 <div class="div-automobili">
-<h3 class="text-left text-primary">Lista automobila na raspolaganju:</h3>
+<h3 class="text-left">Lista automobila na raspolaganju:</h3>
             <table class="table table-bordered table-striped border border-2 border-dark" id="table-cars">
                 <thead>
                     <tr>

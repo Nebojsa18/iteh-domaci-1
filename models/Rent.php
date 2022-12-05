@@ -27,10 +27,26 @@ class Rent
     }
 
     public static function getAllRent($conn){
-        $query= "SELECT rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id";
+        $query= "SELECT rent.rent_id,rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id";
 
         return $conn->query($query);
 
     }
 
+    public static function searchRent($proizvodjac, $conn)
+    {
+        $query = "SELECT rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id WHERE car.proizvodjac LIKE '%" . $proizvodjac . "%'";
+
+        return $conn->query($query);
+    }
+
+    public static function deleteRent($id, $conn)
+    {
+        $query= "DELETE FROM rent WHERE rent_id=$id";
+
+        return $conn->query($query);
+    }
+
 }
+
+

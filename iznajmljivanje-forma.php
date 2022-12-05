@@ -54,9 +54,9 @@
                 
 
                 <button type="submit" name="dodaj-rent-button" class="btn btn-primary" id="rent-button">Iznajmi automobil</button>
-
+                
             </form>
-
+            <a href="index.php"><button class="btn btn-light" id="iznajmljivanja">POCETNA</button></a>
 
 
             <?php

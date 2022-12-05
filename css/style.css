@@ -29,13 +29,13 @@ h1 {
     text-align:center;
 }
 
-.btnshow button {
+.btnshow button{
     
     
-    color: rgb(5, 5, 5); /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+    color: rgb(5, 5, 5); 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
     margin-left: 5%;
     }
   
@@ -44,6 +44,11 @@ h1 {
     clear: both;
     display: table;
   }
+
+.btnshow{
+    padding-bottom: 19px;
+}
+
 
 .btn{
     color: black;
@@ -56,9 +61,9 @@ th,td,h3,h1{
 
 
 
-.div-automobili{
+.div-automobili, .div-reservations{
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-right: 5%;
 }
 
@@ -70,5 +75,20 @@ th,td,h3,h1{
 }
 
 .form-group {
+    margin-bottom: 1%;
+}
+
+#rez_input {
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#rez_button {
+    width: 10%;
+    height: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
     margin-bottom: 1%;
 }

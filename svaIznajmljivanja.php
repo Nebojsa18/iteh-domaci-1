@@ -16,7 +16,15 @@
 
         <h1 class="text-center ">Rent a car</h1>
 
-
+        <div class="btnshow">
+            <a href="index.php"><button class="btn btn-light" id="iznajmljivanja">POCETNA</button></a> 
+        </div>   
+        
+        <div class="row">
+            <input type="text" class="form-control" id="rez_input">
+            <button class="btn btn-primary" id="rez_button" onclick="pretraziRent()">Pretraži</button> 
+            
+        </div>
 
         <div class="div-reservations">
 
@@ -29,6 +37,7 @@
                         <th>Proizvodjac</th>
                         <th>Model</th>
                         <th>Period iznajmljivanja</th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -50,6 +59,7 @@
                             <td><?php echo $obj->proizvodjac;?></td>
                             <td><?php echo $obj->model; ?></td>
                             <td><?php echo $obj->broj_dana; ?></td>
+                            <td><button class="btn btn-light" id="brisanje" onclick="obrisiRent(<?php echo $obj->rent_id;  ?>)">OBRISI</button></td>
                             
                         </tr>
                     <?php } ?>
@@ -61,6 +71,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
+    
+    
 
 </body>
 
