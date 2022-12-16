@@ -23,6 +23,18 @@ class Car
         $query = "SELECT * FROM car";
         return $conn->query($query);
     }
+
+    public static function sortCarsByPrice($type, $conn)
+    {
+        $query = "SELECT * FROM car ORDER BY cena $type";
+        return $conn->query($query);
+    }
+
+    public static function sortCarsByYear($type, $conn)
+    {
+        $query = "SELECT * FROM car ORDER BY godiste $type";
+        return $conn->query($query);
+    }
     
     
    

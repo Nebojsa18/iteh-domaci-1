@@ -22,7 +22,9 @@
         
         <div class="row">
             <input type="text" class="form-control" id="rez_input">
-            <button class="btn btn-primary" id="rez_button" onclick="pretraziRent()">Pretraži</button> 
+            <button class="btn btn-primary" id="rez_button" onclick="pretraziRent()">Pretraži</button>
+            <button class="btn btn-primary" id="sort_button" onclick="sortRentPeriod()">Sortiraj po periodu iznajmljivanja</button> 
+            
             
         </div>
 
@@ -36,7 +38,7 @@
                         <th>JMBG</th>
                         <th>Proizvodjac</th>
                         <th>Model</th>
-                        <th>Period iznajmljivanja</th>
+                        <th onclick="sortRentPeriod()">Period iznajmljivanja</th>
                         <th></th>
                     </tr>
                 </thead>

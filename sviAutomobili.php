@@ -16,8 +16,8 @@ $data = $conn->query($query);
                     <tr>
                         <th>Proizvodjac</th>
                         <th>Model</th>
-                        <th>Godiste</th>
-                        <th>Cena</th>
+                        <th onclick="sortCarYear()">Godiste</th>
+                        <th onclick="sortCarPrice()">Cena</th>
                         <th>Rezervisi</th>
                     </tr>
                 </thead>

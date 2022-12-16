@@ -47,6 +47,27 @@ class Rent
         return $conn->query($query);
     }
 
+    public static function sortRent($type, $conn)
+    {
+        $query = "SELECT rent.rent_id,rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id ORDER BY rent.broj_dana $type";
+   
+        return $conn->query($query);
+    }
+
+    // public static function sortRentAsc($conn)
+    // {
+    //     $query = "SELECT rent.rent_id,rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id ORDER BY rent.broj_dana ASC";
+   
+    //     return $conn->query($query);
+    // }
+
+    // public static function sortRentDesc($conn)
+    // {
+    //     $query = "SELECT rent.rent_id,rent.ime, rent.prezime, rent.jmbg, car.proizvodjac, car.model, rent.broj_dana FROM rent JOIN car ON rent.car_id=car.car_id ORDER BY rent.broj_dana DESC";
+   
+    //     return $conn->query($query);
+    //}
+
 }
 
 

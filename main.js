@@ -34,3 +34,71 @@ function obrisiRent(id){
 
 }
 
+var sort = "ASC"; //promenljiva zajednicka za sort automobila i iznajmljivanja
+
+function sortRentPeriod() {
+
+
+    // var sort = "ASC"; //proveri sta se desi kada se izbaci napolje promenljiva
+
+    $.ajax({
+        url: 'ajax/sortRent.php',
+        method: 'post',
+        data: {
+            sort_type: sort
+        },
+
+        success: function (data) {
+            $('tbody').html(data);
+            
+            if(sort=="DESC"){
+                sort="ASC";
+            }
+            else
+                sort="DESC";
+        }
+    })
+}
+
+function sortCarPrice(){
+
+    $.ajax({
+        url: 'ajax/sortCars.php',
+        method: 'post',
+        data: {
+            sort_type: sort
+        },
+
+        success: function (data) {
+            $('tbody').html(data);
+            
+            if(sort=="DESC"){
+                sort="ASC";
+            }
+            else
+                sort="DESC";
+        }
+    })
+}
+
+function sortCarYear(){
+
+    $.ajax({
+        url: 'ajax/sortCarsYear.php',
+        method: 'post',
+        data: {
+            sort_type: sort
+        },
+
+        success: function (data) {
+            $('tbody').html(data);
+            
+            if(sort=="DESC"){
+                sort="ASC";
+            }
+            else
+                sort="DESC";
+        }
+    })
+}
+
